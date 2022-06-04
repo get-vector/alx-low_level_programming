@@ -4,7 +4,9 @@
 /* more headers goes there */
 
 /**
- *betty style doc for function main goes there
+*main - the program entry
+*Description:Check random number sign
+*Return:return 0 for success
 */
 int main(void)
 {
