@@ -8,8 +8,10 @@
 
 int main(void)
 {
-	for(char i = 56; i < (56 + 26); i++)
+	char i;
+
+	for(i = 56; i < 82; i++)
 		putchar(i);
-	putchar("/n");
+	putchar('\n');
 	return (0);
 }
