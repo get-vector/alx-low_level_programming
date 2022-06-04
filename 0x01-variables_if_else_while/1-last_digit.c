@@ -4,7 +4,7 @@
 /* more headers goes there */
 
 /**
-*main:the entry
+*main - the entry
 *Description:last digit
 *Return: return 0
 */
