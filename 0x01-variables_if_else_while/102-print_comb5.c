@@ -1,5 +1,9 @@
 #include <stdio.h>
 
+short upper(short);
+
+short lower(short);
+
 /**
 *main - entry
 *Description:putchars
@@ -8,30 +12,33 @@
 
 int main(void)
 {
-	short i, j, k, l;
+	short i, j;
 
-	for (i = '0'; i <= '9'; i++)
+	for (i = 0; i <= 98; i++)
 	{
-		for (j = '0'; j <= '9'; j++)
+		for (j = i + 1; j <= 99; j++)
 		{
-			for (k = i; k <= '9'; k++)
+			putchar(upper(i));
+			putchar(lower(i));
+			putchar(' ');
+			putchar(upper(j));
+			putchar(lower(j));
+			if (i != 98 || j != 99)
 			{
-				for (l = j + 1; l <= '9'; l++)
-				{
-					putchar(i);
-					putchar(j);
-					putchar(' ');
-					putchar(k);
-					putchar(l);
-					if (i != '9' || j != '8' || k != '9' || l != '9')
-					{
-						putchar(',');
-						putchar(' ');
-					}
-				}
+				putchar(',');
+				putchar(' ');
 			}
 		}
 	}
 	putchar('\n');
 	return (0);
+}
+
+
+short upper(short n){
+	return ('0' + (short)(n/10));
+}
+
+short lower(short n){
+	return ('0' + (n % 10));
 }
