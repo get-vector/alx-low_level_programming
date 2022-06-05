@@ -34,11 +34,25 @@ int main(void)
 	return (0);
 }
 
-
-short upper(short n){
+/**
+ * upper - get alphabet for first digit
+ * @n: input number
+ * Description: get value
+ * Return: alphet short
+ */
+short upper(short n)
+{
 	return ('0' + (short)(n/10));
 }
 
-short lower(short n){
+
+/**
+ *  lower - get alphabet for second digit
+ * @n: input number
+ * Description: get value
+ * Return: alphet short
+ */
+short lower(short n)
+{
 	return ('0' + (n % 10));
 }
