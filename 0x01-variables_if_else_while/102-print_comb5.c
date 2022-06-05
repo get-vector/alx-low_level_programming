@@ -42,7 +42,7 @@ int main(void)
  */
 short upper(short n)
 {
-	return ('0' + (short)(n/10));
+	return ('0' + (short)(n / 10));
 }
 
 
