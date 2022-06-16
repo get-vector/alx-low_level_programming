@@ -1,9 +1,11 @@
 #include <string.h>
+/* header file*/
 
 /**
  *  _strncat - a concentation of string
- *  @:
- *  @:
+ *  @dest: destination
+ *  @src: source
+ *  @n: no of byte
  *  Description: Join string together
  *  Return: Get another string as output
  */
