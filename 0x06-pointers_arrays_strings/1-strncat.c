@@ -1,22 +1,17 @@
 #include <string.h>
-/* header file*/
+
 
 /**
- *  _strncat - a concentation of string
- *  @dest: destination
- *  @src: source
- *  @n: no of byte
- *  Description: Join string together
- *  Return: Get another string as output
-*/
+ * _strncat - copy string
+ * @dest: Destination
+ * @src: Source
+ * @n: Number if bytes
+ * Description: just copy n bytes
+ * Return: returns dest
+ */
+ 
 
 char *_strncat(char *dest, char *src, int n)
 {
-	char *p = strncat(dest, src, n);
-	return (p);
-}
-
-void main()
-{
-	_strncat("the man", " look at him", 3);
+	return (strncat(dest, src, n));
 }
