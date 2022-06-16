@@ -13,5 +13,10 @@
 char *_strncat(char *dest, char *src, int n)
 {
 	char *p = strncat(dest, src, n);
-	return (dest);
+	return (p);
+}
+
+void main()
+{
+	_strncat("the man", " look at him", 3);
 }
