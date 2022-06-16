@@ -1,4 +1,3 @@
-#include <string.h>
 
 /**
  *  _strcat - a concentation of string
@@ -10,6 +9,9 @@
 
 char *_strcat(char *dest, char *src)
 {
-	strcat(dest,src);
+	char *p = dest; 
+	while(*p++!='\0');
+	p--;
+	while((*p++=*src++) != '\0');
 	return (dest);
 }
