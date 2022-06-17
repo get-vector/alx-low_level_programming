@@ -15,8 +15,10 @@ void print_rev(char *s)
 	char *revs = (char*)malloc(lstr);
 	char *buffer = revs;
 	char *end = s + lstr - 1;
+	
 	for (; end >= s; end--, buffer++)
 		*buffer = *end;
+
 	*buffer = '\0';
 	puts(revs);
 }
